@@ -79,7 +79,7 @@
 
    # then
 
-   npm run dev
+   npm start
 
 ```
 
