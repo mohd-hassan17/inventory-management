@@ -10,7 +10,7 @@ const userSchema = new Schema<IUser>(
     password: { type: String, required: true, select: 0 },
     title: { type: String },
     description: { type: String },
-    avatar: { type: String },
+    avatar: { type: String, default: 'https://avatars.githubusercontent.com/u/194966376?v=4' },
     role: { type: String, enum: UserRole, default: 'USER' },
     status: { type: String, enum: UserStatus, default: 'ACTIVE' },
     address: { type: String },
